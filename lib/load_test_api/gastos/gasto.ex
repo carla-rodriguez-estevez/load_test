@@ -16,7 +16,9 @@ defmodule LoadTestApi.Gastos.Gasto do
   @doc false
   def changeset(gasto, attrs) do
     gasto
-    |> cast(attrs, [:importe, :tipo, :descripcion])
-    |> validate_required([:importe, :tipo, :descripcion])
+    |> cast(attrs, [:importe, :tipo, :descripcion, :animal_id])
+    |> validate_required([:importe, :tipo, :descripcion, :animal_id])
+    |> validate_number(:importe, greater_than: 0)
   end
+
 end

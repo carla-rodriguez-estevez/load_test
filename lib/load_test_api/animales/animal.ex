@@ -9,7 +9,7 @@ defmodule LoadTestApi.Animales.Animal do
     field :edad, :integer
     field :nombre, :string
     field :tamaño, :integer
-    has_many :gastos, LoadTestApi.Gastos.Gasto
+    has_many :gasto, LoadTestApi.Gastos.Gasto
 
     timestamps()
   end

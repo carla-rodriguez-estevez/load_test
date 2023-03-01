@@ -7,11 +7,13 @@ defmodule LoadTestApi.Repo.Migrations.CreateGastos do
       add :importe, :integer
       add :tipo, :string
       add :descripcion, :string
-      add :animal_id, references(:animales, on_delete: :delete_all, type: :binary_id)
+      add :animal_id, references(:animales, type: :binary_id, on_delete: :nothing, null: false)
 
       timestamps()
     end
 
+
     create index(:gastos, [:animal_id])
+
   end
 end

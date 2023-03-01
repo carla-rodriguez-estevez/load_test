@@ -37,6 +37,9 @@ defmodule LoadTestApi.Animales do
   """
   def get_animal!(id), do: Repo.get!(Animal, id)
 
+  def get_full_animal(id) do
+    Animal |> where(id: ^id) |> preload([:gasto]) |> Repo.one()
+  end
   @doc """
   Creates a animal.
 
