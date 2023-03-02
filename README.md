@@ -7,6 +7,17 @@ load test api to test posgres efficiency in an elixir phoenix API
   * Install dependencies with `mix deps.get`
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
+# Set database data:
+
+inside your postgres app:
+
+ ```
+ \copy animales from './animales.csv' WITH DELIMITER ',' CSV HEADER;
+ 
+  \copy gastos from '.gastos.csv' WITH DELIMITER ',' CSV HEADER;
+ 
+ ```
+
 Then please visit http://localhost:4000 or access to any of the endpoints configured at router.ex
 
 
