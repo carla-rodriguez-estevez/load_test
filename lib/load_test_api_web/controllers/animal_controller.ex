@@ -20,9 +20,14 @@ defmodule LoadTestApiWeb.AnimalController do
     end
   end
 
+  def show_listed(conn, %{"nombre" => nombre}) do
+    animales = Animales.get_animales_name(nombre)
+    render(conn, "animales_gastos.json", animales: animales)
+  end
+
   def show(conn, %{"id" => id}) do
-    animal = Animales.get_animal!(id)
-    render(conn, "show.json", animal: animal)
+    animal = Animales.get_full_animal(id)
+    render(conn, "full_animal.json", animal: animal)
   end
 
   def update(conn, %{"id" => id, "animal" => animal_params}) do

@@ -40,6 +40,13 @@ defmodule LoadTestApi.Animales do
   def get_full_animal(id) do
     Animal |> where(id: ^id) |> preload([:gasto]) |> Repo.one()
   end
+
+  def get_animales_name(name) do
+    animales = Repo.all(from a in Animal, where: ilike(a.nombre, ^"%#{name}%") )
+
+    Enum.map(animales, fn item -> Repo.preload(item, [:gasto]) end )
+
+  end
   @doc """
   Creates a animal.
 
