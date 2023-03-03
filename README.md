@@ -17,6 +17,13 @@ inside your postgres app:
   \copy gastos from '.gastos.csv' WITH DELIMITER ',' CSV HEADER;
  
  ```
+ 
+ 
+ ##Http request to test when load test (most hard load cases to test)
+ 
+ ![Captura desde 2023-03-03 02-01-31](https://user-images.githubusercontent.com/72921055/222605329-2f3fd362-843e-4181-aba2-7eb1eab809aa.png)
+
+![Captura desde 2023-03-03 02-01-58](https://user-images.githubusercontent.com/72921055/222605374-f41ab447-4016-48f7-a9cb-974627cd226e.png)
 
 Then please visit http://localhost:4000 or access to any of the endpoints configured at router.ex
 
