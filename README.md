@@ -25,6 +25,13 @@ inside your postgres app:
 
 ![Captura desde 2023-03-03 02-01-58](https://user-images.githubusercontent.com/72921055/222605374-f41ab447-4016-48f7-a9cb-974627cd226e.png)
 
+# Branches and tools
+Since I want to compare results of diferent load testing tools, there will be diferent branchs with the tool in the name of the branch and the readme 
+will contain the result in my computer in perfect conditions (no strange tasks in process). This way configurations won't afect each other tool.
+
+
+#
+
 Then please visit http://localhost:4000 or access to any of the endpoints configured at router.ex
 
 
