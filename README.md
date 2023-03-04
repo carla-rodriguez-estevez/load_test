@@ -28,7 +28,9 @@ inside your postgres app:
 # Branches and tools
 Since I want to compare results of diferent load testing tools, there will be diferent branchs with the tool in the name of the branch and the readme 
 will contain the result in my computer in perfect conditions (no strange tasks in process). This way configurations won't afect each other tool.
-
+ Created:
+  
+  **k6**  -> branch created and updated
 
 #
 
