@@ -36,26 +36,32 @@ Since I want to compare results of diferent load testing tools, there will be di
 will contain the result in my computer in perfect conditions (no strange tasks in process). This way configurations won't afect each other tool.
  Created:
   
-#  WRK results
-No need to config new things or add files to the project, only download wrk tool on your local machine with your package manager
-*Documentation*:
-https://medium.com/pragmatic-programmers/load-testing-3b1d57c5c31b
+#  Postman
+Postman allows us to send request and view the results aesy and fast. With a simple local installation we can manage and test a lot of http request from our app.
+Axample this are some screenshots of the time spent in only one petition according to postman:
 
+42 ms
+![Captura desde 2023-03-05 00-46-59](https://user-images.githubusercontent.com/72921055/222934132-b6562e7a-71b3-4561-8e41-b96accdea2e1.png)
+
+39 ms
+![Captura desde 2023-03-05 00-46-29](https://user-images.githubusercontent.com/72921055/222934150-6c17d5cc-7338-47ae-9cdf-30f937038c83.png)
+
+
+*Documentation*:
+https://speedscale.com/postman-load-test-tutorial/
+https://www.postman.com/
+https://www.baeldung.com/postman-load-testing
 
 #
 
 example of using:
 
-![Captura desde 2023-03-05 00-03-17](https://user-images.githubusercontent.com/72921055/222932619-90b917ee-e09d-405b-acf0-787fc4286d79.png)
 
 
 Petición 1:
-![Captura desde 2023-03-05 00-03-48](https://user-images.githubusercontent.com/72921055/222932666-f07ae807-63ef-42a5-9f78-e22dd458af86.png)
 
 
 Petición 2:
-
-![Captura desde 2023-03-05 00-04-18](https://user-images.githubusercontent.com/72921055/222932668-35d007e2-ece6-4d6e-adff-74182c0a180a.png)
 
 
 #
